@@ -1,4 +1,4 @@
-const API = "http://localhost:8080/offers"
+const API = "https://house-analyzer.herokuapp.com/offers"
 
 const restService = {
     getOffers: async () => {
