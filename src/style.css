@@ -1,0 +1,240 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.wrapper {
+    padding-top: 100px;
+    font-family: 'Lato', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #eee;
+}
+
+.section {
+    font-family: 'Lato', sans-serif;
+    min-height: 250px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 3px 3px #ccc;
+}
+
+.content {
+    width: 100%;
+}
+
+.general-info {
+    display: flex;
+    padding: 0 0 40px 20px;
+}
+
+.details-section {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.analyse-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.analyse-btn:hover {
+    background-color: #ddd;
+}
+
+.link {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    flex-grow: 1;
+}
+
+.param {
+    padding: 10px;
+}
+
+.param__header {
+    font-size: 20px;
+    margin: 0 auto;
+    flex: 2 1 0;
+}
+
+.param__price {
+    text-align: right;
+    font-size: 20px;
+    flex: 1 1 0;
+}
+
+.rooms-img {
+    height: 50px;
+    background-image: url('./images/pngwing.com.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+
+.area-img {
+    min-height: 50px;
+    min-width: 50px;
+    background-image: url('./images/PngItem_877138.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding: 5px;
+}
+
+.rooms-area-wrapper {
+    padding: 0 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.param-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.param-container > * {
+    margin: 10px 0;
+}
+
+.param-image {;
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 999;
+    font-family: 'Lato', sans-serif;
+}
+
+.navigation__list {
+    width: 70%;
+    display: flex;
+    color: #eeeeee;
+    font-size: 24px;
+    flex-basis: 70%;
+}
+
+.navigation__list-element {
+    text-align: center;
+    flex-basis: 100%;
+    padding: 0;
+}
+
+.navigation__list-element:hover {
+    cursor: pointer;
+    margin-bottom: -1px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.analyse-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+
+.analyse {
+    width: 60%;
+}
+
+.analyse-stats {
+    text-align: left;
+    min-height: 150px;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 3px 3px #ccc;
+    font-size: 20px;
+}
+
+.statistics-wrapper {
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+}
+
+.statistics {
+    width: 70%;
+}
+
+.statistics-section {
+    margin: 20px;
+    display: flex;
+    box-shadow: 0 0 3px 3px #ccc;
+    background-color: #fff;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.statistics-section:first-of-type {
+    margin: 100px 20px 20px;
+    display: flex;
+    box-shadow: 0 0 3px 3px #ccc;
+    background-color: #fff;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.statistics-section__chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    position: absolute;
+    top: calc(50% - 65px);
+    left: calc(50% - 65px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+}
+
+.analyse-part {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.analyse-part-link {
+    margin-top: 40px;
+}
+
+sup {
+    font-size: 12px;
+}
