@@ -13,7 +13,7 @@ const Navigation = () => {
     const [hamburger, setHamburger] = useState(false);
 
     useEffect(() => {
-        if (width < 768) {
+        if (width < 768 && width !== 0) {
             setHamburger(true);
         } else {
             setHamburger(false);
@@ -22,21 +22,19 @@ const Navigation = () => {
     }, [width]);
 
     const deleteFog = () => {
-        if (width < 768) {
+        if (width < 768 && width !== 0) {
             setNavigation({
                 ...navigation,
                 navigation: 'navigation-hamburger anim-out',
             });
 
             setTimeout(() => {
-                if (width < 768) {
+                if (width < 768 && width !== 0) {
                     setNavigation({
                         ...navigation,
                         navigation: 'navigation-hamburger',
                     });
                     setHamburger(true)
-                }else{
-                    setHamburger(false);
                 }
             }, 500);
         } else {
