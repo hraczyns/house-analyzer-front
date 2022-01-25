@@ -1,0 +1,138 @@
+.section {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 3px 3px #ccc;
+}
+
+.content {
+    width: 100%;
+}
+
+.general-info {
+    display: flex;
+    padding: 0 0 40px 20px;
+}
+
+@media (max-width: 768px) {
+    .general-info {
+        padding-bottom: 15px;
+        padding-left: 10px;
+    }
+}
+
+.details-section {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.link {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    flex-grow: 1;
+}
+
+.param {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .param {
+        font-size: 12px;
+    }
+}
+
+.param__header {
+    font-size: 20px;
+    flex: 2 1 0;
+}
+
+@media (max-width: 768px) {
+    .param__header {
+        font-size: 12px;
+        max-width: 110px;
+    }
+}
+
+.param__price {
+    text-align: right;
+    font-size: 20px;
+    flex: 1 1 0;
+}
+
+@media (max-width: 768px) {
+    .param__price {
+        font-size: 12px;
+    }
+}
+
+.rooms-img {
+    height: 50px;
+    background-image: url('./images/pngwing.com.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .rooms-img {
+        height: 25px;
+    }
+}
+
+.area-img {
+    display: flex;
+    align-self: end;
+    min-height: 50px;
+    min-width: 50px;
+    background-image: url('./images/PngItem_877138.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .area-img {
+        min-height: 25px;
+        min-width: 25px;
+        max-height: 25px;
+        max-width: 25px;
+        text-align: right;
+    }
+}
+
+.rooms-area-wrapper {
+    padding: 0 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .rooms-area-wrapper {
+        padding: 0 8px;
+    }
+}
+
+.param-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.param-container > * {
+    margin: 10px 0;
+}
+
+.param-image {;
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

@@ -1,0 +1,117 @@
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 70px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 999;
+    font-family: 'Lato', sans-serif;
+}
+
+.navigation-name {
+    color: #eee;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.navigation__list {
+    width: 70%;
+    display: flex;
+    color: #eeeeee;
+    font-size: 24px;
+    flex-basis: 70%;
+}
+
+.navigation__list-element {
+    text-align: center;
+    flex-basis: 100%;
+    padding: 0;
+}
+
+.navigation__list-element:hover {
+    cursor: pointer;
+    margin-bottom: -1px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.navigation-hamburger {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.navigation__list-hamburger {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #eeeeee;
+    font-size: 24px;
+    flex-basis: 70%;
+}
+
+.navigation__list-element-hamburger {
+    margin: 40px;
+    font-size: 24px;
+}
+
+.hamburger {
+    mask: url('./images/hamburger.png') no-repeat;
+    mask-position: center center;
+    background-color: #fff;
+    mask-size: contain;
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+.navigation--hamburger {
+    justify-content: space-between;
+}
+
+.anim-in {
+    animation: show;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.anim-out {
+    animation: hide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes show {
+    from {
+        opacity: 0;
+        top: -25vw;
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+        top: 0;
+    }
+
+    to {
+        opacity: 0;
+        top: -25vw;
+    }
+}

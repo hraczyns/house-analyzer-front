@@ -28,7 +28,6 @@ const Statistics = () => {
             const results = await restService.getDataForChart();
             const charts = [];
             for (const {providerName, statisticsSections} of results) {
-                console.log(providerName);
                 const chartsPerProvider = [];
                 for (const section of statisticsSections) {
                     const datasetData = {
@@ -69,10 +68,10 @@ const Statistics = () => {
                 <ReactLoading className={"loading"} type={"spinningBubbles"} width={130} color="rgb(7,210,90)"/>
             </div>;
         }
-        return data.map(({title, chartsPerProvider}) => <article className={"statistics-section"}>
+        return data.map(({title, chartsPerProvider}, index) => <article key={index} className={"statistics-section"}>
             <h3>{title} statistics</h3>
             <section className={"statistics-section__chart"}>
-                {chartsPerProvider.map(chart => <OffersChart data={chart} title={""}/>)};
+                {chartsPerProvider.map((chart, index) => <OffersChart key={index} data={chart} title={""}/>)}
             </section>
         </article>);
 

@@ -12,7 +12,6 @@ ChartJS.register(
 
 const OffersChart = ({data, title}) => {
     const options = {
-        responsive: true,
         plugins: {
             legend: {
                 position: 'top'
@@ -24,7 +23,7 @@ const OffersChart = ({data, title}) => {
         },
     }
     const BarFixed = withChartSizeControl(Bar);
-    return <BarFixed options={options} data={data} type={'bar'} width="300" height="250"/>;
+    return <BarFixed options={options} data={data} type={'bar'} height={250}/>
 }
 
 function withChartSizeControl(Component) {

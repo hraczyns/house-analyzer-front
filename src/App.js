@@ -5,6 +5,11 @@ import Statistics from "./components/Statistics";
 import StatsPerFlat from "./components/StatsPerFlat";
 import Navigation from "./components/Navigation";
 
+import './statistics.css';
+import './navigation.css';
+import './analyse.css';
+import './offer.css';
+
 const App = () => {
     return (
         <div className="App">
